@@ -185,11 +185,10 @@
   height: 100%;
 }
 .f-ii{
-  /* margin-left: 1.5rem;  */
-  width: 60%;
+ width: 60%;
  display: grid;
  grid-template-columns: repeat(1,1fr);
- grid-template-rows: repeat(3,1fr);
+ grid-row-gap: 0.5rem;
 }
 .four , .five , .six{
   display: flex;
