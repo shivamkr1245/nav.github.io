@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <title>SIGN UP</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-flow: row wrap;
+      align-content: center;
+      justify-content: center;
+    }
+    .inner-item,.two div{
+      width: 100%;
+    }
+    .flex-item{
+      display: grid;
+      place-content: center;
+    }
+    .inner-item .two{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      border-radius: 2px;
+    }
+    label[for="o"]{
+      display: block;
+    }
+    label,button{
+      font-size: clamp(14px,16px,17px);
+      text-decoration: none;
+    }
+    .two button{
+      width: 100%;
+      padding: 5px 0;
+    }
+    .om{
+      font-size: 1rem;
+    }
+    a{
+      text-decoration: none;
+    }
+    .oy{
+      margin-left: 2px;
+    }
+    button{
+      font-size: 1.1rem;
+    }
+   @media screen and (max-width:420px){
+    .om,button,p{
+      font-size: 1.1rem;
+   }
+   a{
+    font-size: 16px;
+   }
+   body{
+      background: url('./image/temple.jpg') no-repeat fixed center center;
+      background-size: 100% 100%;
+    }
+    .three,.four{
+      margin-top: 2px;
+    }
+    .oy{
+      margin: 0;
+    }
+    .container{
+      padding: 0 0.2rem;
+    }
+   }
+   input{
+    padding: clamp(2px,2px,5px) clamp(3px,4px,5px);
+    border:0.2px solid hsl(210,8%,25%);
+    border-radius: 2px;
+    outline:none;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+
+    <div class="flex-item" style="max-width: 19.375rem; padding: 1rem 0.2rem;height: 100%;">
+      <div class="inner-item two" style="display: flex; flex-flow:row wrap; justify-content:center; align-items:center; width: 100%; padding: 0.7rem 0;">
+        <button style="background: white;color: black;outline:none; border:0.2px solid hsl(210,8%,25%);border-radius: 2px;"><i class="fa-brands fa-google" style="margin-right: 7px;"></i>Log In With Google</button>
+        
+        <button style="background-color: black;color:white; outline:none;  border:0.2px solid hsl(210,8%,25%);border-radius: 2px; margin-top: 8px;"><i class="fa-brands fa-github" style="margin-right: 7px; "></i>Log In With Git HUB</button>
+        
+        <button style="background: #385499; outline:none;  color:white; border:0.2px solid hsl(210,8%,25%);border-radius: 2px; margin-top: 8px;"><i class="fa-brands fa-facebook-square" style="background: #385499;color:aliceblue;margin-right: 2px; margin-right: 7px;"></i>Login With Facebook</button>
+    
+      </div>
+
+      <div class="inner-item three" style="display: flex;justify-content:center;align-items:center;flex-wrap:wrap;background-color: #f3f3f3 ;padding: 2.5rem  0;border-radius: 6px; box-shadow: 0 10px 24px hsl(0deg 0% 0% / 5%), 0 20px 48px hsl(0deg 0% 0% / 5%), 0 1px 4px hsl(0deg 0% 0% / 10%); margin: 17px 0;">
+        <div class="d-inner-item">
+          <label for="o">EMAIL</label>
+          <input type="email" id="o" >
+        </div>
+        <div class="d-inner-item" style="margin-top: 0.7rem;">
+          <div><label for="p">PASSWORD</label>
+          <a href="https://accounts.google.com/ServiceLogin/signinchooser?continue=https%3A%2F%2Fwww.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="oy" style="font-size: 12px;">Forgot Password?</a></div>
+          <input type="password" id="p" >
+        </div>
+        <div class="d-inner-item" style="margin-top: 0.7rem;">
+          <button style="border-radius: 2px;background:hsl(206,100%,52%); outline: none;border: none;padding: 0.4rem clamp(3rem,4rem,4.6rem) ;color: white;">Log in</button>
+        </div>
+
+      </div>
+
+      <div class="inner-item four" style="display:flex;justify-content:center;align-items:center;flex-wrap:wrap; padding: clamp(5px,14px,2rem) clamp(2px,8px,1rem);">
+
+        <div class="f-i">
+          <p style="display: inline-block; " class="om">Don’t have an account? </p>
+          <a href="https://auth.freecodecamp.org/login?state=hKFo2SA3aVNyRXBIY0wxd3ZUb2R6QjU0dEVEcTJFVzMyYzRFd6FupWxvZ2luo3RpZNkgWG03Nzk0ZzlwS3pMUUdQS2o3RjFPZ3ZXNTBKMXU1bEejY2lk2SBhVUR2OWpWcVRmeEJSRTFsNjBOQTVBZjd5VENHRTRjeQ&client=aUDv9jVqTfxBRE1l60NA5Af7yTCGE4cy&protocol=oauth2&response_type=code&redirect_uri=https%3A%2F%2Fapi.freecodecamp.org%2Fauth%2Fauth0%2Fcallback&scope=openid%20profile%20email" style="font-size: clamp(16px,17px,18px)" target="_blank"> Sign up</a>
+        </div>
+        <div class="f-i">
+          <p style="display: inline-block; " class="om">Are you an employer?</p>
+          <a href="https://freejobalert.com" style="font-size: clamp(16px,17px,18px)" target="_blank"> up on Talent <i class="fa-solid fa-location-arrow" style="margin-left:5px;"></i> </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

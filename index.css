@@ -1,0 +1,469 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --black:rgba(28, 219, 219, 0.045);
+  --blue:rgb(18, 83, 235);
+}
+.main{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-row-gap: 1rem;
+}
+.kg a{
+  height: auto;
+}
+.mla{
+  background: linear-gradient(rgb(161, 161, 190),rgb(179, 234, 231),rgb(158, 242, 255));
+  padding: 0 1rem;
+  border-radius: 5px;
+  height: 2.5rem;
+  align-self: center;
+}
+.container{
+  width:100%;
+  height: auto;
+  padding: 0.2rem 0.2rem 0.4rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-areas: 
+  "one one one"
+  "two two three"
+  "four five six"
+  ;
+  grid-gap: 0.5rem 2rem;
+  background-color: whitesmoke;
+  box-shadow: 0 10px 24px hsl(0deg 0% 0% / 5%), 0 20px 48px hsl(0deg 0% 0% / 5%), 0 1px 4px hsl(0deg 0% 0% / 10%);
+}
+.one{
+  grid-area: one;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.iii,.ops{
+  width: 50%;
+}
+.w:hover{
+  color: hsl(5, 85%, 63%);
+}
+.ops{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.iii{
+  display: grid;
+  place-items: center start;
+}
+.q{
+  font-weight: 800;
+  font-size: 2.8rem;
+}
+.i{
+  display: grid;
+  place-items: center;
+}
+.w{
+  text-decoration: none;
+  font-size: 1.1em;
+  color: hsl(236, 13%, 42%);
+}
+.ops{
+  display: flex; 
+  flex-direction:row;
+}
+.two{
+  grid-area: two;
+  height: auto;
+}
+.p-ii button:hover{
+  background-color: hsl(240, 100%, 5%);
+}
+.three{
+  grid-area: three;
+  padding: 1.5rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  background-color: hsl(240, 100%, 5%);
+}
+.inner{
+  height: auto;
+}
+.a{
+  display: grid;
+  place-items: center start;
+}
+.c , .d{
+  margin-top: 5px;
+  border-top: 1px solid hsl(36, 100%, 99%);
+}
+.b,.c,.d{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: repeat(1,1fr);
+  align-items: center;
+}
+.po{
+  font-weight: 800;
+  font-size: 2rem;
+  color: hsl(35, 77%, 62%);
+}
+.poo{
+  color: hsl(36, 100%, 99%);
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.pooo{
+  color: hsl(233, 8%, 79%);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.four{
+  grid-area: four;
+}
+.five{
+  grid-area: five;
+}
+.six{
+  grid-area: six;
+}
+.i-d{
+  width: 100%;
+  height: auto;
+}
+.i-d img{
+  width: 100%;
+  height: 100%;
+}
+.ii-d{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.p-i{
+  width: 36%;
+  margin-left: 5px;
+  height: auto;
+}
+.p-ii{
+  width: 64%;
+  margin-right: 5px;
+  height: auto;
+}
+.p-a{
+  font-weight: 800;
+  font-size: 3rem;
+}
+.p-b{
+  font-size: 1.1rem;
+  color: hsl(233, 8%, 79%);
+}
+.p-ii button{
+  background-color:  hsl(5, 85%, 63%);
+  border: none;
+  margin-top: 2.5rem;
+  padding: 0.8rem 1.8rem;
+}
+.pp-ii:hover{
+  color:hsl(5, 85%, 63%);
+  cursor: pointer;
+}
+.poo:hover{
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+.f-i{
+  height: 100%;
+  width: 28%;
+}
+.f-i img{
+  width: 100%;
+  height: 100%;
+}
+.f-ii{
+  /* margin-left: 1.5rem;  */
+  width: 60%;
+ display: grid;
+ grid-template-columns: repeat(1,1fr);
+ grid-template-rows: repeat(3,1fr);
+}
+.four , .five , .six{
+  display: flex;
+  justify-content: space-between;
+}
+.pp-i{
+  font-size: 2rem;
+  font-weight: 800;
+  color: hsl(233, 8%, 79%);
+}
+.pp-ii{
+  font-size: 21px;
+  font-weight: 700;
+  color: hsl(240, 100%, 5%);
+}
+.pp-iii{
+  font-size: 18px;
+  font-weight: 400;
+  color: hsl(236, 13%, 42%);
+}
+.mla{
+  display: none;
+}
+@media screen and (max-width:400px) {
+  .container{
+    grid-template-columns: repeat(1,1fr);
+    padding: 2px 5px;   
+    grid-template-areas: "one" "two" "three" "four"  "five" "six";
+  }
+  .i-d , .f-i img{
+    width: 100%;
+  }
+  .p-ii button a{
+    font-size: 1rem;
+  }
+  .f-i{
+    width: 25%;
+  }
+  .f-ii{
+    width: 70%;
+  }
+  .three{
+    height: auto;
+  }
+  .p-i,.p-ii{
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .ii-d{
+    flex-wrap: wrap;
+  }
+  .a{
+    margin-bottom: 8px;
+  }
+  .iii{
+    width: max-content;
+  }
+  .one{
+    display: block;
+  }
+  
+  .wp:checked ~ .ops {
+    display: block;
+  }
+  .wp:checked ~ .ops{
+    width: 64%;
+    margin: 0;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f6f3f3;
+    padding: 2.8rem 1rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-auto-rows: max-content;
+    justify-items: start;
+    grid-gap: 1.5rem;
+    box-shadow: 0 58px 72px hsl(0deg 20% 13% / 46%), 0 60px 94px hsl(0deg 0% 0% / 87%), 0 45px 40px hsl(0deg 0% 0% / 43%);
+  }
+  .i{
+    justify-items: start;
+  }
+  .mla{
+    width: max-content;
+    display: block;
+  }
+  .mla{
+    display: grid;
+    place-items: center;
+  }
+  .ops{
+    position: fixed;
+    z-index: 9999;
+    display: none;
+  }
+  .aw{
+    width: 2.1rem;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    z-index: 999999;
+  }
+  .aw::after{
+    content: "";
+    width: 2.1rem;
+    height: 4px;
+    background-color:black;
+    position: absolute;
+    top: 150%;
+    left: 0;
+    z-index: 999999;
+  }
+  .aw::before{
+    content: "";
+    width: 2.1rem;
+    height: 4px;
+    background-color:black;
+    position: absolute;
+    bottom: 150%;
+    left: 0;
+    z-index: 999999;
+  }
+  .one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .wp:checked ~ .ops{
+    position: fixed;
+  }
+  .wp:checked ~ .aw{
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+  }
+  .wp:checked ~ .aw {
+    visibility: hidden;
+  }
+  .wp:checked ~ .aw::after{
+    visibility: visible;
+    transform: rotate(45deg);
+    border-radius: 2px;
+  }
+  .wp:checked ~ .aw::before{
+    visibility: visible;
+    transform: rotate(-45deg);
+    top: 0.39rem;
+    border-radius: 2px;
+  }
+}
+.wp{
+  display: none;
+}
+@media  screen and (max-width:1100px) and (min-width:850px){
+  .container{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "one one"
+    "two two"
+    "three four"
+    "five six"
+    ;
+
+  }
+}
+@media screen and (max-width:850px) and (min-width:400px){
+  .container{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: "one" "two" "three" "four" "five" "six";
+  }
+  .iii{
+    width: max-content;
+  }
+  .ops{
+    width: 100%;
+  }
+}
+.containe{
+  width: 100%;
+  height: auto;
+  padding: 2.95rem 2.9rem;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-template-areas: 
+  "on on tw thre"
+  "fou fiv fiv thre"
+  ;
+  grid-gap: 1.8rem;
+  background-color: hsl(210, 46%, 95%);
+  box-shadow: 0 10px 24px hsl(0deg 0% 0% / 5%), 0 20px 48px hsl(0deg 0% 0% / 5%), 0 1px 4px hsl(0deg 0% 0% / 10%);
+}
+.ite{
+border-radius: 8px;
+padding: 1rem;
+}
+.on{
+  grid-area: on;
+  background-color: hsl(263, 55%, 52%);
+  position: relative;
+}
+.tw{
+  grid-area: tw;
+  background-color: hsl(217, 19%, 35%);
+}
+.thre{
+  grid-area: thre;
+  background-color:  hsl(0, 0%, 100%);
+}
+.fou{
+  grid-area: fou;
+  background-color:  hsl(0, 0%, 100%);
+}
+.fiv{
+  grid-area: fiv;
+  background-color: hsl(219, 29%, 14%);
+}
+.img{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+.ite img{
+border-radius: 50%;
+border: 3px solid hsl(210, 46%, 95%);
+}
+span:nth-child(2){
+  margin-left: 14px;
+  margin-top: 12px;
+}
+.p , .pp{
+  margin-top: 1rem;
+  font-family: "Barlow Semi Condensed";
+}
+.p{
+  font-weight: 600;
+  font-size: 19px;
+}.pp{
+  font-weight: 500;
+  font-size: 16px;
+  color: #d2d2d2;
+}
+svg{
+  position: absolute;
+  top: 0.3rem;
+  right: 5rem;
+  opacity: 0.6;
+}
+.ok {
+  color: #d2d2d2;
+}
+.ok{
+  opacity: 50%;
+}
+.okm{
+  opacity: 70%;
+}
+.m{
+  color: black;
+} 
+@media  screen and (max-width:680px) {
+   .containe{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: "on" "tw" "thre" "fou" "fiv";
+    padding: 0.5rem 0.5rem;
+   }
+}
+@media screen and (max-width:1180px) and (min-width:680px){
+  .containe{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "on on" "tw thre" "fou thre" "fiv fiv";
+    padding: 0.5rem 0.8rem;
+  }
+}
