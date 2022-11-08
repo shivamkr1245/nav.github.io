@@ -337,7 +337,7 @@
   .wp:checked ~ .aw::before{
     visibility: visible;
     transform: rotate(-45deg);
-    top: 0.49rem;
+    top: 0.529rem;
     border-radius: 2px;
   }
 }
